@@ -1,0 +1,14 @@
+digraph "Example FSM" {
+     init
+     idle
+     run
+     stop
+
+     // List of transitions
+     init -> idle [label = reset]
+     idle -> idle 
+     idle -> run
+     run -> run 
+     run -> idle [label = resetrapi]
+     idle -> stop    
+}
